@@ -10,9 +10,11 @@
 		AF72E51A2CAB950E0003AB1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72E5192CAB950E0003AB1B /* AppDelegate.swift */; };
 		AF72E51C2CAB950E0003AB1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72E51B2CAB950E0003AB1B /* SceneDelegate.swift */; };
 		AF72E51E2CAB950E0003AB1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72E51D2CAB950E0003AB1B /* ViewController.swift */; };
-		AF72E5212CAB950E0003AB1B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AF72E5202CAB950E0003AB1B /* Base */; };
 		AF72E5232CAB95110003AB1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF72E5222CAB95110003AB1B /* Assets.xcassets */; };
 		AF72E5262CAB95110003AB1B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AF72E5252CAB95110003AB1B /* Base */; };
+		AF72E5302CAB96130003AB1B /* ThreeDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72E52F2CAB96130003AB1B /* ThreeDButton.swift */; };
+		AF72E5322CAB9C840003AB1B /* ThreeDIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72E5312CAB9C840003AB1B /* ThreeDIconButton.swift */; };
+		AF72E5392CABBEF60003AB1B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72E5382CABBEF60003AB1B /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		AF72E5192CAB950E0003AB1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF72E51B2CAB950E0003AB1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AF72E51D2CAB950E0003AB1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AF72E5202CAB950E0003AB1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF72E5222CAB95110003AB1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF72E5252CAB95110003AB1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF72E5272CAB95110003AB1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF72E52F2CAB96130003AB1B /* ThreeDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDButton.swift; sourceTree = "<group>"; };
+		AF72E5312CAB9C840003AB1B /* ThreeDIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDIconButton.swift; sourceTree = "<group>"; };
+		AF72E5382CABBEF60003AB1B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		AF72E5182CAB950E0003AB1B /* UIKitCustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				AF72E5192CAB950E0003AB1B /* AppDelegate.swift */,
-				AF72E51B2CAB950E0003AB1B /* SceneDelegate.swift */,
-				AF72E51D2CAB950E0003AB1B /* ViewController.swift */,
-				AF72E51F2CAB950E0003AB1B /* Main.storyboard */,
+				AF72E5372CABBEE50003AB1B /* Textfield */,
+				AF72E52E2CAB95F20003AB1B /* Button */,
+				AF72E52D2CAB95E00003AB1B /* Supports */,
 				AF72E5222CAB95110003AB1B /* Assets.xcassets */,
 				AF72E5242CAB95110003AB1B /* LaunchScreen.storyboard */,
 				AF72E5272CAB95110003AB1B /* Info.plist */,
 			);
 			path = UIKitCustomViews;
+			sourceTree = "<group>";
+		};
+		AF72E52D2CAB95E00003AB1B /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				AF72E51D2CAB950E0003AB1B /* ViewController.swift */,
+				AF72E51B2CAB950E0003AB1B /* SceneDelegate.swift */,
+				AF72E5192CAB950E0003AB1B /* AppDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		AF72E52E2CAB95F20003AB1B /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				AF72E52F2CAB96130003AB1B /* ThreeDButton.swift */,
+				AF72E5312CAB9C840003AB1B /* ThreeDIconButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		AF72E5372CABBEE50003AB1B /* Textfield */ = {
+			isa = PBXGroup;
+			children = (
+				AF72E5382CABBEF60003AB1B /* CustomTextField.swift */,
+			);
+			path = Textfield;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +157,6 @@
 			files = (
 				AF72E5232CAB95110003AB1B /* Assets.xcassets in Resources */,
 				AF72E5262CAB95110003AB1B /* Base in Resources */,
-				AF72E5212CAB950E0003AB1B /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF72E51E2CAB950E0003AB1B /* ViewController.swift in Sources */,
+				AF72E5322CAB9C840003AB1B /* ThreeDIconButton.swift in Sources */,
+				AF72E5392CABBEF60003AB1B /* CustomTextField.swift in Sources */,
+				AF72E5302CAB96130003AB1B /* ThreeDButton.swift in Sources */,
 				AF72E51A2CAB950E0003AB1B /* AppDelegate.swift in Sources */,
 				AF72E51C2CAB950E0003AB1B /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AF72E51F2CAB950E0003AB1B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF72E5202CAB950E0003AB1B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF72E5242CAB95110003AB1B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,7 +242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -297,9 +321,9 @@
 				INFOPLIST_FILE = UIKitCustomViews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +331,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.huang.UIKitCustomViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,9 +353,9 @@
 				INFOPLIST_FILE = UIKitCustomViews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +363,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.huang.UIKitCustomViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
